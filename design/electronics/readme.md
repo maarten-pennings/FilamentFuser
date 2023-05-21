@@ -9,7 +9,7 @@ The diagram below shows the system components.
 
 
 ## System components
-Each of the system componenst is detailed below.
+Each of the system components is detailed below.
 
 ### Heater resistor
 The heater resistor is a component used in 3D printers.
@@ -46,13 +46,13 @@ Since we have around 3A to switch, we use a [MOSFET power switcher](https://www.
 
 The specifications look ok:
 - switchable power 5V-36V DC, continuous current 15A
-- trigger signal 3.3V-20V (can be connected to the microcontroller IO port)
+- trigger signal 3.3V-20V (can be connected to the micro controller IO port)
 - can be connected to the PWM signal, frequency 0-20kHz
 
 
 
 ## MCU
-As a microcontroller, a good candidate is an ESP32, it has a 12 bit ADC which is helpful
+As a micro controller, a good candidate is an ESP32, it has a 12 bit ADC which is helpful
 for accurately measuring the temperature. A nice one is an [entry level ESP](https://www.aliexpress.com/item/1005004344359250.html),
 it has a small PCB.
 
@@ -81,7 +81,7 @@ that can drop 20V to 5V.
 
 The specifications look ok:
 - input 4.75V to 23V
-- output 1.0V to 17V, continous current 1.8A 
+- output 1.0V to 17V, continuous current 1.8A 
 
 
 
@@ -123,7 +123,7 @@ For the user-interface we plan the following elements and behavior.
   When the mains power is plugged-in the controller will boot.
   It will show the current heater temperature
   (typically room temperature of 25°C), it will have a default setpoint 
-  (typically PLA meltpoint of 210°C), but the heater mode will be off.
+  (typically PLA melting point of 210°C), but the heater mode will be off.
   
   The heater mode is indicated with the red heater LED; LED off means heater mode is off. 
   When the heater mode button is pressed, the heater mode toggles (and thus the LED). 
